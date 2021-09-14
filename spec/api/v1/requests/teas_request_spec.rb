@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'SubscriptionTea Requests' do
+RSpec.describe 'Tea Requests' do
   before(:all) do
     @customer = create(:customer)
     @subscription = @customer.subscriptions.create(price: 12.3, frequency: 1)
