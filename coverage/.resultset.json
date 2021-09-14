@@ -195,7 +195,7 @@
           null,
           null,
           1,
-          2,
+          1,
           null,
           null,
           null,
@@ -223,11 +223,11 @@
         "lines": [
           1,
           1,
-          1,
-          1,
-          1,
-          1,
-          1,
+          5,
+          5,
+          5,
+          5,
+          5,
           null,
           null
         ]
@@ -239,27 +239,10 @@
           1,
           1,
           1,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/nwz/turing/tea_subscription/spec/models/customer_spec.rb": {
-        "lines": [
           1,
           null,
-          1,
-          1,
-          2,
           null,
           null,
-          1,
-          2,
-          2,
-          2,
-          2,
-          2,
           null,
           null
         ]
@@ -281,26 +264,6 @@
           null
         ]
       },
-      "/Users/nwz/turing/tea_subscription/spec/models/subscription_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          2,
-          null,
-          null,
-          1,
-          2,
-          null,
-          null,
-          1,
-          2,
-          2,
-          null,
-          null
-        ]
-      },
       "/Users/nwz/turing/tea_subscription/app/models/subscription.rb": {
         "lines": [
           1,
@@ -315,38 +278,6 @@
           null
         ]
       },
-      "/Users/nwz/turing/tea_subscription/spec/models/subscription_tea_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          2,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/nwz/turing/tea_subscription/app/models/subscription_tea.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/nwz/turing/tea_subscription/spec/models/tea_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          2,
-          2,
-          null,
-          null
-        ]
-      },
       "/Users/nwz/turing/tea_subscription/app/models/tea.rb": {
         "lines": [
           1,
@@ -354,54 +285,8 @@
           1,
           null
         ]
-      },
-      "/Users/nwz/turing/tea_subscription/app/controllers/api/v1/subscriptions_controller.rb": {
-        "lines": [
-          1,
-          1,
-          4,
-          4,
-          4,
-          3,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          4,
-          null,
-          null
-        ]
-      },
-      "/Users/nwz/turing/tea_subscription/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/nwz/turing/tea_subscription/app/serializers/subscription_serializer.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          1,
-          null
-        ]
-      },
-      "/Users/nwz/turing/tea_subscription/app/serializers/customer_serializer.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          null
-        ]
       }
     },
-    "timestamp": 1631649635
+    "timestamp": 1631655195
   }
 }
