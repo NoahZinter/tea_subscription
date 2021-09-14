@@ -52,14 +52,40 @@ RSpec.describe 'Subscription Requests' do
 
     end
 
-    it 'ignores extra attributes'
+    it 'ignores extra attributes' do
+      subscription_params = {
+        frequency: 1,
+        price: 10.5,
+        foo: 'bar',
+        baz: 'biff'
+      }
+      headers = { 'CONTENT_TYPE' => 'application/json'}
+      post "/api/v1/customers/#{@customer.id}/subscriptions", headers: headers, params: JSON.generate(subscription_params)
 
-    it 'will not create if teas are empty'
+      expect(response.status).to eq 201
 
-    it 'does not create without price'
+      subscription = Subscription.last
+      expect(subscription.status).to eq 'pending'
+      expect(subscription.title).to eq 'untitled subscription'
+      expect(subscription.price).to eq 10.5
+      expect(subscription.frequency).to eq 'monthly'
+      expect(subscription.customer_id).to eq @customer.id
+      expect{subscription.foo}.to raise_error(NameError)
+      expect{subscription.baz}.to raise_error(NameError)
+    end
 
-    it 'populates the title based on user name and frequency'
+    it 'does not create without price' do
+      subscription_params = {
+        frequency: 1,
+        price: nil
+      }
+      headers = { 'CONTENT_TYPE' => 'application/json'}
+      post "/api/v1/customers/#{@customer.id}/subscriptions", headers: headers, params: JSON.generate(subscription_params)
 
+      expect(response.status).to eq 400
+      error = JSON.parse(response.body, symbolize_names: true)
 
+      expect(error[:error]).to eq 'Subscription not initiated'
+    end
   end
 end
