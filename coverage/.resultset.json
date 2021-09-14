@@ -204,9 +204,43 @@
           null
         ]
       },
+      "/Users/nwz/turing/tea_subscription/spec/factories/customer.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/nwz/turing/tea_subscription/spec/factories/tea.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/nwz/turing/tea_subscription/config/routes.rb": {
         "lines": [
           1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
           null,
           null
         ]
@@ -228,66 +262,6 @@
           null
         ]
       },
-      "/Users/nwz/turing/tea_subscription/spec/models/subscription_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          2,
-          null,
-          null,
-          1,
-          2,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/nwz/turing/tea_subscription/app/models/subscription.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/nwz/turing/tea_subscription/spec/models/subscription_tea_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          2,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/nwz/turing/tea_subscription/app/models/subscription_tea.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/nwz/turing/tea_subscription/spec/models/tea_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          2,
-          2,
-          null,
-          null
-        ]
-      },
       "/Users/nwz/turing/tea_subscription/app/models/tea.rb": {
         "lines": [
           1,
@@ -297,6 +271,6 @@
         ]
       }
     },
-    "timestamp": 1631640208
+    "timestamp": 1631645873
   }
 }
