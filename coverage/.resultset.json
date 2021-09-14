@@ -283,11 +283,8 @@
           null,
           1,
           1,
-          null,
-          null,
-          null,
-          1,
-          null,
+          2,
+          2,
           null,
           null
         ]
@@ -295,10 +292,12 @@
       "/Users/nwz/turing/tea_subscription/app/models/tea.rb": {
         "lines": [
           1,
+          1,
+          1,
           null
         ]
       }
     },
-    "timestamp": 1631639747
+    "timestamp": 1631640017
   }
 }
