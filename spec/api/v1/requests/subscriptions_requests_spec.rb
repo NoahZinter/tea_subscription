@@ -88,4 +88,10 @@ RSpec.describe 'Subscription Requests' do
       expect(error[:error]).to eq 'Subscription not initiated'
     end
   end
+
+  describe 'index' do
+    it 'returns all subscriptions for a given user' do
+      
+    end
+  end
 end

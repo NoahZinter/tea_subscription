@@ -41,7 +41,5 @@ RSpec.describe 'Tea Requests' do
     it 'test/add error handling'
 
     it 'test nonexistent teas'
-
-    it ''
   end
 end
