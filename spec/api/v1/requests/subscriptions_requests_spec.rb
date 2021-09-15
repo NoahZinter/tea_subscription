@@ -145,4 +145,24 @@ RSpec.describe 'Subscription Requests' do
       expect(sub_3[:attributes][:frequency]).to eq 'bi-monthly'
     end
   end
+
+  describe 'cancel' do
+    it 'cancels a subscription' do
+      sub_1 = @customer.subscriptions.create!(title: "#{@customer.first_name}'s weekly tea subscription", status: 2, frequency: 0, price: 2.3)
+      sub_2 = @customer.subscriptions.create!(title: "#{@customer.first_name}'s monthly tea subscription",status: 2, frequency: 1, price: 3.4)
+      sub_3 = @customer.subscriptions.create!(title: "#{@customer.first_name}'s bi-monthly tea subscription", status: 2, frequency: 2, price: 4.5)
+
+      expect(sub_3.status).to eq 'active'
+
+      patch "/api/v1/customers/#{@customer.id}/subscriptions/#{sub_3.id}/cancel"
+      expect(response.status).to eq 200
+      cancelled = JSON.parse(response.body, symbolize_names: true)
+
+      expect(cancelled).to have_key(:data)
+      expect(cancelled[:data]).is_a? Hash
+      expect(cancelled[:data]).to have_key(:id)
+      expect(cancelled[:data][:id].to_i).to eq sub_3.id
+      expect(cancelled[:data][:attributes][:status]).to eq 'cancelled'
+    end
+  end
 end
