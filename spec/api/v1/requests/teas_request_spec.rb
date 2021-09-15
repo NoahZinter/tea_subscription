@@ -37,5 +37,11 @@ RSpec.describe 'Tea Requests' do
       expect(changed_subscription[:data][:attributes]).to have_key(:frequency)
       expect(changed_subscription[:data][:attributes][:frequency]).to eq 'monthly'
     end
+
+    it 'test/add error handling'
+
+    it 'test nonexistent teas'
+
+    it ''
   end
 end
