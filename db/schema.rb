@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 2021_09_14_165038) do
   end
 
   create_table "subscriptions", force: :cascade do |t|
-    t.string "title"
+    t.string "title", default: "untitled subscription"
     t.float "price"
     t.integer "status", default: 0
     t.integer "frequency", default: 1
@@ -47,7 +47,7 @@ ActiveRecord::Schema.define(version: 2021_09_14_165038) do
   end
 
   create_table "teas", force: :cascade do |t|
-    t.string "type"
+    t.string "variety"
     t.text "description"
     t.integer "temperature"
     t.integer "brew_time"

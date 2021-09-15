@@ -1,7 +1,7 @@
 class CreateTeas < ActiveRecord::Migration[5.2]
   def change
     create_table :teas do |t|
-      t.string :type
+      t.string :variety
       t.text :description
       t.integer :temperature
       t.integer :brew_time
