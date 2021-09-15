@@ -1,24 +1,33 @@
-# README
+# Table of Contents
+- [Overview](#overview)
+- [Installation](#installation)
+- [Endpoints](#endpoints)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+---
 
-Things you may want to cover:
+## Overview
 
-* Ruby version
+The Tea Subscription API is a REST API which allows users to create and manage subscriptions (weekly, monthly, or bi-monthly) for delivieries of tea. 
 
-* System dependencies
+---
 
-* Configuration
+## Installation
 
-* Database creation
+This API is built using
 
-* Database initialization
+`Ruby 2.7.2` and `Rails 5.2.6`
 
-* How to run the test suite
+To run this API locally clone down this repository and run `bundle install`
 
-* Services (job queues, cache servers, search engines, etc.)
+---
 
-* Deployment instructions
+## Endpoints
 
-* ...
+* Create Subscription
+
+* Cancel Subscription
+
+* Show all Subscriptions for a Customer
+
+* Add teas to a Subscription
+
