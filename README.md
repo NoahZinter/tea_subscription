@@ -9,6 +9,7 @@
 
 The Tea Subscription API is a REST API which allows users to create and manage subscriptions (weekly, monthly, or bi-monthly) for delivieries of tea. 
 
+![Schema](photos/tea_subscription_db_schema.png)
 ---
 
 ## Installation
