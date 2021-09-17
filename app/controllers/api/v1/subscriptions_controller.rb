@@ -17,7 +17,7 @@ class Api::V1::SubscriptionsController < ApplicationController
 
   def cancel
     subscription = Subscription.find(params[:subscription_id])
-    subscription.update(status:1)
+    subscription.update(status: 'cancelled')
     render json: SubscriptionSerializer.new(subscription)
   end
 
